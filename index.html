@@ -1,5 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang='en-US'>
   <head>
-    <meta http-equiv="refresh" content="0; url=/docs.html" />
+    <meta charset='utf-8'>
+    <title>Redirecting…</title>
+    <noscript>
+      <link rel='canonical' href='/docs.html'>
+      <meta http-equiv='refresh' content='0; url=/docs.html'>
+    </noscript>
   </head>
+  <body>
+    <h1>Redirecting…</h1>
+    <noscript>
+      <a href='/docs.html'>Click here if you are not redirected.</a>
+    </noscript>
+    <script>
+      var url = '/docs.html' + window.location.hash;
+      var a = document.createElement('a');
+      a.href = url;
+      a.innerHTML = "Click here if you are not redirected.";
+      document.body.appendChild(a);
+      location = url;
+    </script>
+  </body>
 </html>
+
